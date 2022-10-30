@@ -1,0 +1,166 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0%;
+}
+
+:root {
+  box-sizing: 62.5%;
+  --cc-color-icon: #003f69;
+
+  --fc-heading: #323238;
+
+  --fs-heading: 12.6rem;
+
+  --ff-heading: 'Roboto', sans-serif;
+
+  --colorbg-image-start: #003f69;
+  --color-image-inside-start: #FFFFFF;
+
+  --colorbg-image-default: #E1E1E6;
+  --color-image-inside-default: #323238;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+max-width: 82.1rem; 
+max-height: 33.6rem;
+display: grid;
+grid-template-areas: 
+'A A B';
+/* margin-top: 10rem; */
+}
+
+.content-timer {
+  grid-area: A;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-right: 19.2rem;
+}
+
+.wrapper-timer{
+  display: flex;
+  font-size: var(--fs-heading);
+  color: var(--fc-heading);
+  font-family: var(--ff-heading);
+  font-weight: 500;
+  margin-bottom: 4.8rem;
+}
+
+.wrapper-icons {
+  display: flex;
+  gap: 4rem;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  background-color: transparent; /* Safari deixa o bg com cor cinza */
+}
+
+input {
+  max-width: 60%;
+  position: relative;
+  bottom: 3.2rem
+}
+input[type='range']::-webkit-slider-runnable-track{
+  height: .2rem;
+  background: rgb(5, 5, 5);
+  border-radius: .5rem;
+}
+input[type='range']::-webkit-slider-thumb {
+  max-width: 2.0rem;
+  height: 2.0rem;
+  margin-top: -4.5px;
+  border-radius: 6.0rem;
+}
+
+.wrapper-icons button svg path:hover {
+  fill: var(--cc-color-icon);
+}
+
+section {
+  grid-area: B;
+  display: grid;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  grid-template-areas: 
+  'img1 img1'
+  'img2 img2';
+  gap: 3.2rem;
+}
+
+section .wrapper-ambients-sound-1 {
+  grid-area: img1;
+  display: flex;
+  gap: 3.2rem;
+}
+
+section .wrapper-ambients-sound-2 {
+  grid-area: img2;
+  display: flex;
+  gap: 3.2rem;
+}
+
+section button svg path:hover {
+  fill: var(--cc-color-icon);
+}
+
+.hide svg path{
+  fill: var(--cc-color-icon);
+}
+
+.hide svg path + path {
+  fill: white;
+}
+
+/* Dark Model */
+
+.LightAndDarkMode {
+  position: absolute;
+  top: 6rem;
+  right: 6rem;
+}
+
+.btn-hide {
+  display: none;
+}
+
+.main-bg-dark {
+  background: #121214;
+}
+
+.cTxtColor {
+  color: var(--cc-color-icon)
+}
+
+.iconsTimerColor button svg path {
+  fill: var(--cc-color-icon);
+}
+
+.cardsColorDark svg path {
+  fill: #cbdcdf
+}
+
+.cardsColorDark svg path + path {
+  fill: black;
+}
+
+.hideDark svg path{
+  fill: var(--cc-color-icon)
+}
+
+.hideDark svg path + path {
+  fill: white
+}
