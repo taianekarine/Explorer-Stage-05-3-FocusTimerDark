@@ -1,3 +1,4 @@
+import {inputForest, inputRain, inputCoffe, inputFireplace } from './elements.js'
 export default () => {
   const soundForest = new Audio ('assets/sounds/Floresta.wav')
   const soundRain = new Audio ('assets/sounds/Chuva.wav')
@@ -12,16 +13,19 @@ export default () => {
 
   const soundRainStart = () => {
     soundRain.play
+    soundRain.volume = inputRain.value / 100
     soundRain.loop = true
   }
 
   const soundCoffeStart = () => {
     soundCoffe.play
+    soundCoffe.volume = inputCoffe.value / 100
     soundCoffe.loop = true
   }
 
   const soundFireplaceStart = () => {
     soundFireplace.play
+    soundFireplace.volume = inputFireplace.value / 100
     soundFireplace.loop = true
   }
 

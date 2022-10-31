@@ -62,7 +62,7 @@ button {
 }
 
 input {
-  max-width: 60%;
+  max-width: 100%;
   position: relative;
   bottom: 2.5rem;
 }

@@ -1,8 +1,7 @@
 import Sounds from './sounds.js'
 import { Timer } from './timer.js'
-import {minutesDisplay, secondsDisplay, numberControl, buttonPlay, buttonStop, buttonAddition, buttonSubtraction, minutes, 
-        buttonForest, buttonRain, buttonCoffe, buttonFireplace, btnLight, btnDark, bgColor, cTextColor, cIconsTimer, cardsColorOne, cardsColorTwo,
-        buttonForestDark, buttonRainDark, buttonCoffeDark, buttonFireplaceDark} from './elements.js'
+import {minutesDisplay, secondsDisplay, numberControl, buttonPlay, buttonStop, buttonAddition, buttonSubtraction, minutes, buttonForest, buttonRain, buttonCoffe, buttonFireplace, inputForest,
+inputRain, inputCoffe, inputFireplace, btnLight, btnDark, bgColor, cTextColor, cIconsTimer, cardsColorOne, cardsColorTwo, buttonForestDark, buttonRainDark, buttonCoffeDark,buttonFireplaceDark,} from './elements.js'
 
 const configTimer = Timer({
   minutesDisplay, 
@@ -17,6 +16,11 @@ buttonPlay.addEventListener('click', () => { configTimer.countDown() })
 buttonStop.addEventListener('click', () => { configTimer.Hold() })
 buttonAddition.addEventListener('click', () => { configTimer.incrementTimer() })
 buttonSubtraction.addEventListener('click', () => { configTimer.decrementTimer() })
+
+inputForest.addEventListener(`input`, () => { soundForest.volume = inputForest.value / 100 })
+inputRain.addEventListener(`input`, () => { soundRain.volume = inputRain.value / 100 })
+inputCoffe.addEventListener(`input`, () => { soundCoffe.volume = inputCoffe.value / 100 })
+inputFireplace.addEventListener(`input`, () => { soundFireplace.volume = inputFireplace.value / 100 })
 
 
 buttonForest.addEventListener('click', () => {

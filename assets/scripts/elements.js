@@ -13,6 +13,11 @@ const buttonRain = document.querySelector('.btn-rain')
 const buttonCoffe = document.querySelector('.btn-coffe')
 const buttonFireplace = document.querySelector('.btn-fireplace')
 
+const inputForest = document.querySelector('#volume-control-forest')
+const inputRain = document.querySelector('#volume-control-rain')
+const inputCoffe = document.querySelector('#volume-control-coffe')
+const inputFireplace = document.querySelector("#volume-control-fireplace")
+
 const btnLight = document.querySelector('.btn-light')
 const btnDark = document.querySelector('.btn-dark')
 
@@ -40,6 +45,10 @@ export {
   buttonRain,
   buttonCoffe,
   buttonFireplace,
+  inputForest,
+  inputRain,
+  inputCoffe,
+  inputFireplace,
   btnLight,
   btnDark,
   bgColor,
