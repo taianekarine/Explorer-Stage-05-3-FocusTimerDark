@@ -1,0 +1,23 @@
+{
+  "name": "focus-time-dark",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Duronne/Explorer-Dark-Mode.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Duronne/Explorer-Dark-Mode/issues"
+  },
+  "homepage": "https://github.com/Duronne/Explorer-Dark-Mode#readme",
+  "dependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
