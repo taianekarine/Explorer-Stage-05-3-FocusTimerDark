@@ -17,12 +17,6 @@ buttonStop.addEventListener('click', () => { configTimer.Hold() })
 buttonAddition.addEventListener('click', () => { configTimer.incrementTimer() })
 buttonSubtraction.addEventListener('click', () => { configTimer.decrementTimer() })
 
-inputForest.addEventListener(`input`, () => { soundForest.volume = inputForest.value / 100 })
-inputRain.addEventListener(`input`, () => { soundRain.volume = inputRain.value / 100 })
-inputCoffe.addEventListener(`input`, () => { soundCoffe.volume = inputCoffe.value / 100 })
-inputFireplace.addEventListener(`input`, () => { soundFireplace.volume = inputFireplace.value / 100 })
-
-
 buttonForest.addEventListener('click', () => {
   buttonRain.classList.remove('hide')
   buttonCoffe.classList.remove('hide')

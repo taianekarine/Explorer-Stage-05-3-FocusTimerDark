@@ -1,31 +1,42 @@
 import {inputForest, inputRain, inputCoffe, inputFireplace } from './elements.js'
+
 export const Sounds = () => {
-  
+  const soundForest = new Audio('assets/sounds/Floresta.wav')
+  const soundRain = new Audio('assets/sounds/Chuva.wav')
+  const soundCoffe = new Audio('assets/sounds/Cafeteria.wav')
+  const soundFireplace = new Audio('assets/sounds/Lareira.wav')
+
+  let soundsOff = (soundOne, soundTwo, soundThree) => {
+    soundOne.pause()
+    soundTwo.pause()
+    soundThree.pause()
+  }
+
   const soundForestStart = () => {
-    const soundForest = new Audio ('assets/sounds/Floresta.wav')
-    soundForest.play
-    soundForest.volume = inputForest.value / 100
+    soundsOff(soundRain, soundCoffe, soundFireplace)
+    soundForest.play()
+    inputForest.addEventListener(`input`, () => { soundForest.volume = inputForest.value / 100 })
     soundForest.loop = true
   }
   
   const soundRainStart = () => {
-    const soundRain = new Audio ('assets/sounds/Chuva.wav')
-    soundRain.play
-    soundRain.volume = inputRain.value / 100
+    soundsOff(soundForest, soundCoffe, soundFireplace)
+    soundRain.play()
+    inputRain.addEventListener(`input`, () => { soundRain.volume = inputRain.value / 100 })
     soundRain.loop = true
   }
   
   const soundCoffeStart = () => {
-    const soundCoffe = new Audio ('assets/sounds/Cafeteria.wav')
-    soundCoffe.play
-    soundCoffe.volume = inputCoffe.value / 100
+    soundsOff(soundRain, soundForest, soundFireplace)
+    soundCoffe.play()
+    inputCoffe.addEventListener(`input`, () => { soundCoffe.volume = inputCoffe.value / 100 })
     soundCoffe.loop = true
   }
   
   const soundFireplaceStart = () => {
-    const soundFireplace = new Audio ('assets/sounds/Lareira.wav')
-    soundFireplace.play
-    soundFireplace.volume = inputFireplace.value / 100
+    soundsOff(soundRain, soundCoffe, soundForest)
+    soundFireplace.play()
+    inputFireplace.addEventListener(`input`, () => { soundFireplace.volume = inputFireplace.value / 100 })
     soundFireplace.loop = true
   }
 
