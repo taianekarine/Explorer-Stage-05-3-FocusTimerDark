@@ -123,8 +123,8 @@ section button svg path:hover {
 
 .LightAndDarkMode {
   position: absolute;
-  top: 10rem;
-  right: 10rem;
+  top: 2rem;
+  right: 2rem;
 }
 
 .btn-hide {
