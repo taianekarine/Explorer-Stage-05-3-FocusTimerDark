@@ -60,7 +60,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## Você pode acessar o projeto online através do link abaixo:
 
-Explorer-Stage-05-3-FocusTimerDark
+https://explorer-stage-05-3-focus-timer-dark.vercel.app/
 
 ---
 
